@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <button onclick="changeContent()">click</button>
+ <button onclick="removeContent()">remove</button>
+
+
+    <div id="div1">
+        <h1  id="d1" >SHIVA</h1>
+        <p>SOFTWARE DEVELOPER</p>
+        <script>
+
+            let h1=document.getElementById("d1")
+            let div=document.getElementById("div1")
+            function changeContent(){
+                h1.innerHTML="VAMSHI"
+                h1.style.color="white"
+                h1.style.backgroundColor="violet"
+} 
+ function removeContent(){
+    div.remove(h1)
+
+ }
+
+
+                
+    
+
+
+
+        </script>
+    </div>
+</body>
+</html>
