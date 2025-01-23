@@ -265,13 +265,24 @@ for(i=0;i<data.length;i++){
 let div1=document.createElement("div");
 div1.style.border="2px solid black";
 div1.style.width="40vw"
+div1.style.height="100vh"
 div1.style.margin="20px"
 div1.style.gap="50px"
-document.body.append(div1)
+div1.style.transform="1.05"
+document.body.append(div1);
+let id =document.createElement("num")
+id.innerHTML=data[i].id
+let id_cont=document.createElement("div")
+id_cont.style.color="red";
+id_cont.style.textAlign="center"
+id_cont.style.fontSize="25px"
+id_cont.style.backgroundColor="lightgreen"
+id_cont.append(id)
 let title=document.createElement("h1")
 title.innerHTML=data[i].title;
 let title_cont=document.createElement("div")
-title_cont.style.height="30%"
+title_cont.style.height="30%";
+title_cont.style.textAlign="center"
 title_cont.style.backgroundColor="chocolate"
 title_cont.append(title)
 let desc=document.createElement("p")
@@ -292,7 +303,14 @@ cat_cont.style.color="white"
 cat_cont.style.background="black"
 cat_cont.style.textAlign="center"
 cat_cont.append(category)
-div1.append(title_cont,container,pic,cat_cont)
+let price=document.createElement("cost")
+price=data[i].price;
+let price_cont=document.createElement("div")
+price_cont.style.color="white";
+price_cont.style.backgroundColor="black"
+price_cont.style.textAlign="center"
+price_cont.append(price)
+div1.append(id_cont,title_cont,container,pic,cat_cont,price_cont)
 main_div.append(div1)
 }
     </script>
